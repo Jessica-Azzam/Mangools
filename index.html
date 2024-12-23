@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangools Login</title>
+    <style>
+      :root {
+        --white-color: white;
+        --green-color: #3bdc60;
+        --pink-color: #f552ef;
+        --blue-color: rgb(27, 27, 110);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Arial', sans-serif;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url('mangools-review-and-guide-1-1296x700.jpg');
+        overflow: hidden;
+          }
+
+      .container {
+        background-color: var(--white-color);
+        padding: 40px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        width: 360px;
+        text-align: center;
+        overflow: hidden;
+        margin-bottom:20px;
+      }
+
+      h1 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        font-size: 22px;
+        color: #333;
+        margin-bottom: 20px;
+        font-weight: 600;
+      }
+
+      .login-form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .input-group {
+        margin-bottom: 15px;
+        text-align: left;
+      }
+
+      .input-group label {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 5px;
+        display: block;
+      }
+
+      .input-group input {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+        border: 1px solid #0b0b0b;
+        border-radius: 2px;
+        outline: none;
+      }
+
+      .sign-in-btn {
+        background-color: var(--green-color);
+        color: white;
+        font-weight: bolder;
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        margin: auto;
+        margin-top: 10px;
+        width: 80%;
+      }
+
+      .sign-in-btn:hover {
+        background-color: var(--pink-color);
+      }
+
+      .form-footer {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+      }
+
+      .form-footer a {
+        font-size: 14px;
+        color: var(--blue-color);
+        text-decoration: underline;
+        margin-top: 15px;
+      }
+
+      .form-footer a:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        padding: 10px;
+        background-color: var(--white-color);
+        background-color:transparent;
+      }
+
+      .services {
+        display: flex;
+        gap: 20px;
+        list-style-type: none;
+
+      }
+
+      .services a {
+        font-size: 13px;
+        color: black;
+        font-weight: bolder;
+        text-decoration: none;
+        font-size: 14px;
+      }
+
+      .services a:hover {
+        background-color: orange;
+        padding: 5px;
+        border-radius: 4px;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mangools</h1>
+        <h2>Good to see you again</h2>
+        <form class="login-form">
+            <div class="input-group">
+                <label for="email">Your email</label>
+                <input type="email" id="email" placeholder="e.g. elon@tesla.com" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Your password</label>
+                <input type="password" id="password" placeholder="e.g. ilovemangools123" required>
+            </div>
+            <button type="submit" class="sign-in-btn">Sign in</button>
+            <div class="form-footer">
+                <a href="#">Don't have an account?</a>
+                <a href="#">Forgot password?</a>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <ul class="services">
+            <li><a href="#">KWFinder</a></li>
+            <li><a href="#">SERPChecker</a></li>
+            <li><a href="#">SERPWatcher</a></li>
+            <li><a href="#">LinkMiner</a></li>
+            <li><a href="#">SiteProfiler</a></li>
+        </ul>
+    </div>
+</body>
+</html>
+
